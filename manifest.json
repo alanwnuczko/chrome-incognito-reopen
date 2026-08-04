@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Reopen Tab in Incognito",
+  "version": "1.0.0",
+  "description": "Reopens the current tab in an incognito window using a keyboard shortcut.",
+  "permissions": ["tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "commands": {
+    "reopen-incognito": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y"
+      },
+      "description": "Reopen current tab in incognito"
+    }
+  }
+}
